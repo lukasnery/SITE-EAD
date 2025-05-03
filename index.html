@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Caçador de Fantasmas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Caçador de Fantasmas</h1>
+    </header>
+
+    <nav>
+        <a onclick="mostrarSecao('home')">Home</a>
+        <a onclick="mostrarSecao('sobre')">Sobre o Jogo</a>
+        <a onclick="mostrarSecao('fotos')">Fotos</a>
+        <a onclick="mostrarJogo()">Jogar</a>
+    </nav>
+
+    <section id="home">
+        <h2>Bem-vindo!</h2>
+        <p>Explore o mundo sombrio de fantasmas e mistérios. Prepare-se para enfrentar o desconhecido!</p>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre o Jogo</h2>
+        <p>
+            Em uma cidade esquecida pelo tempo, estranhos fenômenos começaram a ocorrer.<br>
+            Você é Pandorino, um caçador de fantasmas que retorna ao local onde tudo começou.<br>
+            Armado apenas com sua pistola espiritual, você enfrentará espíritos vingativos e monstros bizarros.<br>
+            O quanto mais espera, mais percebe um aumento no número de fantasmas... Você deve ser rápido.<br><br>
+            Mova com os direcionais.<br>
+            Atire com o botão esquerdo do mouse.<br>
+            Space para reiniciar o jogo.
+
+
+        </p>
+    </section>
+
+    <section id="fotos">
+        <h2>Fotos</h2>
+        <div class="gallery">
+            <img src="fantasma1.jpg" alt="Fantasma 1">
+            <img src="fantasma2.jpg" alt="Fantasma 2">
+            <img src="arma.jpg" alt="Cenário do jogo">
+        </div>
+    </section>
+
+    <section id="jogo" style="display: none;">
+        <h2>Jogue Agora!</h2>
+        <iframe src="jogo/index.html" width="800" height="600" frameborder="0" allowfullscreen></iframe>
+        <button id="btn-voltar" onclick="voltarInicio()">Voltar ao Início</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Criado por Lucas Nery Theodoro<br>
+            Projeto Tech Academy - TADS<br>
+            Universidade Integrado
+
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
